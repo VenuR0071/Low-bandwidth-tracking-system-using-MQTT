@@ -14,7 +14,8 @@ The Low Bandwidth Tracking System is designed to monitor the real-time location 
 
 ### Hardware
 - **ESP32 Microcontroller**: Equipped with a GPS module (e.g., NEO-6M) to capture latitude and longitude.
-- **WebSocket-Compatible MQTT Broker**: Hosted at `ws://68.178.168.62:8083` (or local setup with Mosquitto).
+- **WebSocket-Compatible MQTT Broker**: Hosted at `ws://your-ipaddress:8083` (or local setup with Mosquitto).
+- **Mobile with VisionX app ,a smile app for the phone to connect to the mptt server and publish messages.
 
 ### Software
 - **HTML/CSS/JavaScript**: Builds the web dashboard for visualization.
@@ -135,20 +136,7 @@ The Low Bandwidth Tracking System is designed to monitor the real-time location 
    - Click a "Topic X" button to highlight the corresponding vehicle’s marker.
    - Use "Reset Marker" to clear highlights and revert to default icons.
 
-## Project Structure
 
-```
-low-bandwidth-tracking-system/
-├── index.html              # Main dashboard HTML
-├── style.css               # Styles for the dashboard
-├── script.js               # Simulates sensor data updates
-├── maps.js                 # Map visualization and MQTT integration
-├── static/
-│   ├── icons/
-│   │   ├── placeholder.png  # Default marker icon (blue pin)
-│   │   ├── mining-truck.png # Highlighted marker icon (mining truck)
-├── README.md               # Project documentation
-```
 
 ## Limitations and Future Improvements
 
@@ -187,10 +175,6 @@ low-bandwidth-tracking-system/
 3. Commit changes (`git commit -m 'Add your feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a Pull Request.
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contact
 
