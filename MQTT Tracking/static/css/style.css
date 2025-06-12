@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #adb5bd;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 17px auto;
+    background-color:#343a40;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#map {
+    position: absolute;
+    left: 10rem;
+    width: 80%;
+    height: 60vh;
+}
+/* styles.css */
+/* styles.css */
+
+.sensor-data {
+    justify-content: center;
+    background-color: #adb5bd;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; /* Center the main heading */
+}
+
+.main-heading {
+    font-size: 24px;
+    margin: 0 20px 15px;
+}
+
+.sensor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 2x3 grid */
+    gap: 10px; /* Adjust the gap between grid items */
+}
+
+.sensor-parameter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sensor-line {
+    width: 10px;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.sensor-label {
+    margin: 0;
+    font-weight: bold;
+}
+
+.sensor-value {
+    margin: 0;
+}
+
+/* Styles for the custom-button and custom-button-container classes */
+.custom-button-container {
+    text-align: left; /* Align buttons to the left */
+    margin-left: 20px; /* Add some spacing to the left */
+}
+
+.custom-button {
+    background-color: #367edd; /* Customize the background color */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    margin-right: 20px; /* Add spacing between buttons */
+    display: block; /* Display each button as a block element (vertical) */
+    margin-bottom: 10px; /* Add vertical spacing between buttons */
+}
+
+.custom-button:hover {
+    background-color: #3785d8; /* Change color on hover */
+}
+#topicButtons {
+    text-align: left;
+    margin-left: 20px; /* Add some spacing to the left */
+}
+/* Define a class for rounded buttons */
+.rounded-button {
+    border-radius: 10px; /* Adjust the value to control the roundness of corners */
+}

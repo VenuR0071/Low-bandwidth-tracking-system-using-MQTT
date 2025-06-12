@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Safety Dashboard</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Mine Safety Dashboard</h1>
+    </header>
+    <section class="dashboard">
+        <div class="sensor-data">
+            <h2 class="main-heading">Sensor Data</h2>
+            <div class="sensor-grid">
+                <div class="sensor-parameter">
+                    <div class="sensor-line" style="background-color: #FF5733;"></div>
+                    <p class="sensor-label">Temperature: </p>
+                    <p class="sensor-value" id="temperature"> 25°C</p>
+                </div>
+                <div class="sensor-parameter">
+                    <div class="sensor-line" style="background-color: #33FF57;"></div>
+                    <p class="sensor-label">Visibility: </p>
+                    <p class="sensor-value" id="visibility">10 km</p>
+                </div>
+                <div class="sensor-parameter">
+                    <div class="sensor-line" style="background-color: #5733FF;"></div>
+                    <p class="sensor-label">Humidity: </p>
+                    <p class="sensor-value" id="humidity">50%</p>
+                </div>
+                <div class="sensor-parameter">
+                    <div class="sensor-line" style="background-color: #5733FF;"></div>
+                    <p class="sensor-label">Rainfall: </p>
+                    <p class="sensor-value" id="Rainfall">3mm</p>
+                </div>
+                <div class="sensor-parameter">
+                    <div class="sensor-line" style="background-color: #5733FF;"></div>
+                    <p class="sensor-label">Pseudo: </p>
+                    <p class="sensor-value" id="Pseudo">00</p>
+                </div>
+                <!-- Add more sensor parameters here -->
+            </div>
+        </div>
+ 
+    </section>
+    <div id="map"></div>
+    <div id="topicButtons" class="custom-button-container rounded-button">
+        <!-- Your topic buttons go here -->
+    </div>
+    <button id="resetButton" class="custom-button rounded-button"> Reset  Marker</button>
+    
+
+
+    
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/maps.js"></script>
+    
+</body>
+</html>
