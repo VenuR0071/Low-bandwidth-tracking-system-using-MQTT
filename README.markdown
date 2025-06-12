@@ -15,7 +15,7 @@ The Low Bandwidth Tracking System is designed to monitor the real-time location 
 ### Hardware
 - **ESP32 Microcontroller**: Equipped with a GPS module (e.g., NEO-6M) to capture latitude and longitude.
 - **WebSocket-Compatible MQTT Broker**: Hosted at `ws://your-ipaddress:8083` (or local setup with Mosquitto).
-- **Mobile with VisionX app ,a smile app for the phone to connect to the mptt server and publish messages.
+- **Mobile with VisionX app**:a simple app for the phone to connect to the mptt server and publish messages.
 
 ### Software
 - **HTML/CSS/JavaScript**: Builds the web dashboard for visualization.
